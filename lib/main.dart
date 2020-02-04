@@ -24,13 +24,13 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  double saldo = 250.0;
+  double saldo = 300.0;
 
   @override
   void initState() {
     SharedPreferences.getInstance().then((SharedPreferences prefs) {
       setState(() {
-        saldo = prefs.getDouble('saldo') ?? 250.0;
+        saldo = prefs.getDouble('saldo') ?? 300.0;
       });
     });
     super.initState();
